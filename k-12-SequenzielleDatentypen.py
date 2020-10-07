@@ -78,3 +78,31 @@ name = "ytnoM Python"
 print(name)
 print(name[4::-1])
 print(name[::-1])
+
+
+# Länge einer Sequenz
+print("---Länge einer Sequenz---")
+string = "Wie lange bin ich wohl?"
+print(string)
+print(len(string))
+
+# Kleinste und das größte Element
+print("---Kleinste und das größte Element---")
+s=[5,1,10,-9.5,12,-5]
+print(s)
+print(max(s))
+print(min(s))
+
+# Position eines Elementes in der Sequenz
+print("---Position eines Elementes in der Sequenz---")
+ziffern = [1,2,3,4,5,6,7,8,9]
+print(ziffern)
+print(ziffern.index(3))
+print(name)
+print(name.index("n"))
+
+# Anzahl der Vorkommen eines Elements der Sequenz - s.count(x)
+print("---Anzahl der Vorkommen eines Elements der Sequenz - s.count(x)---")
+s=[1,2,2,3,2]
+print(s)
+print("So oft ist die 2 enthalten:",s.count(2),"mal.")
