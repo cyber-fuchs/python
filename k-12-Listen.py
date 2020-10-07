@@ -85,3 +85,35 @@ s = [4,2,7,9,1,2,6,3]
 print(s)
 s.sort()
 print(s)
+
+s=["Alina","Frank","Jan","Levi","Emily","Anni"]
+print(s)
+s.sort(key=len)
+print(s)
+
+s = [4,2,7,9,1,2,6,3]
+print(s)
+s.sort(reverse=True)
+print(s)
+
+# Weitere Eigenschaften von Listen
+print("Weitere Eigenschaften von Listen")
+
+a = [1337]
+b = a
+b += [2674]
+print(b)
+print(a)
+
+a = [1337]
+b = a[:]
+b += [2674]
+print(a)
+print(b)
+
+a = [[]]
+a = 4 * a
+print(a)
+a[0].append(10)
+print(a)
+print("Die Liste zeigt vier mal auf sich selbst")
