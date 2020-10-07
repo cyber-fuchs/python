@@ -42,3 +42,46 @@ del s[::2]
 print(s)
 
 # Methoden von Listen 
+print("---Methoden von Listen---")
+
+# s.append
+s = ["Nach mir soll noch ein String stehen."]
+s.append("Hier ist er")
+print(s)
+
+#s.extend
+s=[1,2,3]
+print(s)
+s.extend([4,5,6])
+print(s)
+
+# s.insert
+del s[3]
+print(s)
+s.insert(3,4)
+print(s)
+
+#s.pop
+s = ["H","a","l","l","o"]
+s.pop()
+print(s)
+s.pop(0)
+print(s)
+
+#s.remove
+s = ["H","a","l","l","o"]
+print(s)
+s.remove("a")
+print(s)
+
+# s.reverse()
+s = [1,2,3]
+print(s)
+s.reverse()
+print(s)
+
+#s.sort([key, reverse])
+s = [4,2,7,9,1,2,6,3]
+print(s)
+s.sort()
+print(s)
