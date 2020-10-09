@@ -77,3 +77,42 @@ s = ("\tHier kann Quellcode stehen\n" +
 print(s)
 print(s.expandtabs(2))
 
+print("\nString Methoden zum Entfernen bestimmter Zeichen")
+s = "    \t\n  Umgeben von Whitespaces   \n\t"
+print(s.strip())
+#print(s.lstrip())
+#print(s.rstrip())
+
+ziffern ="0123456789"
+s = "234823Versteckt zwischen Zahlen21312312312452309032"
+print(s.strip(ziffern))
+
+print("\nAusrichtung von Strings")
+s = "Richte mich aus"
+print(s.center(50))
+print(s.ljust(50))
+print(s.rjust(50, "-"))
+print("13.37".zfill(20))
+
+print("\nString Test")
+s = "123abc"
+s.isdigit()
+s.isalpha()
+s.isalnum()
+
+s = "www.rheinwerk-verlag.de"
+s.startswith("www")
+s.endswith("de")
+s.startswith("rheinwerk",4)
+
+print("\nVerkettung")
+s = "Fix Foxy Lupo Dr.Knox"
+kontaktliste = s.split()
+print(kontaktliste)
+print(", ".join(kontaktliste))
+
+satz = "Stoiber-Satz"
+print("...ehm...".join(satz))
+
+print(kontaktliste)
+print(" ".join(kontaktliste))
