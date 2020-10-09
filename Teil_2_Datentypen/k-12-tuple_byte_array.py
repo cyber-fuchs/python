@@ -13,3 +13,14 @@ print(datum)
 (tag, monat, jahr) = datum
 print(jahr, monat, tag)
 
+a, b, c = "abc"
+print(a)
+
+zahlen =[10,18,12,15,90,10]
+elf, *andere, zehn = zahlen
+print(andere)
+
+# Immutable != unveränderlich
+a = ([],)
+a[0].append("Test")
+print(a)
