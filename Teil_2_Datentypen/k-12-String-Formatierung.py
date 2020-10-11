@@ -1,3 +1,4 @@
+# Kapitel 12 - Formatierung von Strings
 print("Formatierung von Strings".center(50))
 print("Es ist {}:{} Uhr - Feierabend!".format(13,37))
 print("Es ist {Stunde}:{Minute} Uhr - Feierabend!".format(Stunde=13,Minute=37))
