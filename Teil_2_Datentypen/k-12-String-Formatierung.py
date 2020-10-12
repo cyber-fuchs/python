@@ -47,4 +47,19 @@ print(f"{zahl:n}")
 print(f"{zahl:%}")
 print(f"{zahl:.2f}")
 
+print("Es gilt {z1:05} = {z2:0=5}".format(z1=23, z2=23))
 
+# Tausendertrennung
+geld = 13337000
+print(f"{geld:,d}")
+print(f"{geld:_d}")
+
+#Debugging
+var1 = 12
+var2 = 18
+print(f"{var1=} und {var2=}")
+
+import math
+print(f"{math.pi=}")
+
+#Sonderzeichen
