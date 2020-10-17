@@ -63,3 +63,34 @@ import math
 print(f"{math.pi=}")
 
 #Sonderzeichen
+# Interne Unicode Zeichen
+s = 'ü'
+# Codierung
+t = s.encode("utf8")
+# Übertragung
+e = t.decode("utf8")
+print(e)
+
+str_string = "Püthon"
+bytes_string = str_string.encode("iso-8859-15")
+print(bytes_string)
+print(bytes_string.decode("iso-8859-15"))   # iso-8859-15 wird auch als Latin-9 bezeichnet
+
+# Unicode in Python
+s = "\u20ac"
+print(s)
+print("\N{euro sign}")
+print("\N{Snake}")
+
+# Codierung und DeCodierung von Unicode Zeichen
+chr(8364)
+ord("€")
+
+print(bytes_string)
+print(bytes_string.decode("ascii","ignore"))
+print(bytes_string.decode("ascii","replace"))
+print(bytes_string.decode("ascii","backslashreplace"))
+
+# Encoding-Dekleration
+#für den Windows Zeichensatz cp1252
+# -*- coding: cp1252 -*-
